@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valor de Embarque de Uvas</title>
+    <link rel="stylesheet" href="./assets/css/estilo13.css">
+</head>
+<body>
+    <h1>Calculadora de Valor de las Uvas</h1>
+    <form id="formulario">
+        <label for="tipoUva">Tipo de Uva:</label>
+        <select id="tipoUva" name="tipoUva" required>
+            <option value="">Seleccione el tipo de vua</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+        <br>
+        <label for="tamanoUva">Tamaño de Uva:</label>
+        <select id="tamanoUva" name="tamanoUva" required>
+            <option value="">Seleccione el tamaño de uva</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+        <label for="kilos">Kilos de Uva:</label>
+        <input type="number" id="kilos" name="kilos" required>
+        <br>
+        <button type="button" onclick="Valor()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+
+    <script src="./assets/js/app13.js"></script>
+</body>
+</html>
